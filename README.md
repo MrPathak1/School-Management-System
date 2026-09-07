@@ -1,129 +1,180 @@
-# Mr Pathak School - School Management System
+<div align="center">
 
-A full-featured School Management System built with **React**, **TypeScript**, **Vite**, **Tailwind CSS**, and **Supabase**. It provides dedicated dashboards for Admin, Teacher, Student, and Parent roles with comprehensive tools for managing school operations.
+# Mr Pathak School
 
-**Live Demo**: [https://mrpathak1.github.io/School-Management-System](https://mrpathak1.github.io/School-Management-System)
+### School Management System
+
+A modern, full-featured school management platform built with React, TypeScript, and Supabase.
+
+[![React](https://img.shields.io/badge/React-18-61DAFB?style=flat&logo=react&logoColor=white)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.5-3178C6?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-5.4-646CFF?style=flat&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-06B6D4?style=flat&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![Supabase](https://img.shields.io/badge/Supabase-2.57-3FCF8E?style=flat&logo=supabase&logoColor=white)](https://supabase.com/)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+
+[![Deploy](https://img.shields.io/badge/Deploy-ready-brightgreen)](#getting-started)
+[![TypeScript](https://img.shields.io/badge/Type%20Check-passing-brightgreen)](#)
+[![Build](https://img.shields.io/badge/Build-passing-brightgreen)](#)
+
+<br>
+
+**Mr Pathak School** is a comprehensive school management system that provides dedicated dashboards for **Admin**, **Teacher**, **Student**, and **Parent** roles. Manage attendance, grades, fees, exams, and more — all from one platform.
+
+[Getting Started](#getting-started) | [Features](#features) | [Demo Accounts](#demo-accounts) | [Tech Stack](#tech-stack)
+
+</div>
 
 ---
 
 ## Features
 
-### Admin Dashboard
-- Student, Teacher, Class, and Subject management
-- Fee management with payment recording and receipts
-- Analytics dashboard with charts (attendance, revenue, grades)
-- Exam schedule management
-- Identity card and admit card generators (6 designs each)
-- Bus route management
-- Health records management
-- Campus photo gallery
-- Document management
-- Messaging system
-- Event calendar
-- Library management
+<details open>
+<summary><strong>Admin Dashboard</strong></summary>
 
-### Teacher Dashboard
-- Mark and manage student attendance
-- Enter and manage grades
-- Create and manage assignments
-- Create and manage exams with MCQ questions
-- View teaching schedule (timetable)
-- Upload study materials
-- Send and receive messages
-- View student health records
+| Module | Description |
+|--------|-------------|
+| Student Management | Add, edit, delete, and view all students with class assignment |
+| Teacher Management | Manage teacher profiles, departments, and qualifications |
+| Fee Management | Create fee structures, record payments, generate receipts |
+| Analytics | Revenue charts, attendance trends, grade distribution |
+| Exam Schedules | Create and manage exam timetables |
+| Identity Cards | Generate student/staff ID cards (6 design themes) |
+| Admit Cards | Generate exam admit cards with multiple designs |
+| Bus Routes | Manage bus routes, drivers, stops, and capacity |
+| Health Records | Track student health data, vaccinations, and checkups |
+| Gallery | Upload and organize campus photos in albums |
+| Documents | Upload, categorize, and manage school documents |
+| Library | Manage book catalog, track borrows and returns |
+| Messaging | Send announcements and messages to all users |
+| Events | Create and manage school events and holidays |
 
-### Student Dashboard
-- View attendance record
-- View grades and report cards
-- Take online MCQ exams
-- View exam schedule
-- Access study materials
-- View identity card and admit card
-- Send messages to teachers
-- View bus routes and library
+</details>
 
-### Parent Dashboard
-- Monitor children's attendance and grades
-- View fee payment history
-- Track academic performance (GPA)
-- Send messages to teachers
-- View children's health records
+<details open>
+<summary><strong>Teacher Dashboard</strong></summary>
 
-### Authentication
-- Role-based login (Admin, Teacher, Student, Parent)
-- Quick login demo accounts for testing
-- Teacher self-registration
+| Module | Description |
+|--------|-------------|
+| Attendance | Mark daily attendance per class, subject, and date |
+| Grade Book | Enter marks, auto-calculate grades and percentages |
+| Assignments | Create assignments with due dates and max marks |
+| Exams | Create MCQ exams with timed sessions and auto-grading |
+| Schedule | View weekly teaching timetable |
+| Materials | Upload study materials (notes, links) for students |
+| Messages | Communicate with students and parents |
+| Health | View student health records |
+
+</details>
+
+<details open>
+<summary><strong>Student Dashboard</strong></summary>
+
+| Module | Description |
+|--------|-------------|
+| Attendance | View attendance record with status per day |
+| Grades | View marks, grades, and academic performance |
+| Exams | Take online MCQ exams with countdown timer |
+| Schedule | View class timetable |
+| Materials | Access uploaded study materials |
+| Identity Card | View generated student ID card |
+| Admit Card | View exam admit card |
+| Messages | Send messages to teachers |
+| Library | Browse books and borrow/return |
+| Bus Routes | View assigned bus route and stops |
+
+</details>
+
+<details open>
+<summary><strong>Parent Dashboard</strong></summary>
+
+| Module | Description |
+|--------|-------------|
+| Children Overview | View all linked children with quick stats |
+| Attendance | Monitor attendance percentage per child |
+| Grades | View grades and calculate GPA |
+| Fees | View fee breakdown and payment history |
+| Messages | Send messages to child's teachers |
+| Health | View child's health records |
+
+</details>
 
 ---
 
 ## Tech Stack
 
-| Technology | Purpose |
-|-----------|---------|
-| React 18 | Frontend UI |
-| TypeScript | Type safety |
-| Vite | Build tool & dev server |
-| Tailwind CSS | Styling |
-| Supabase | Backend database & API |
-| Zustand | State management |
-| Recharts | Charts & analytics |
-| Lucide React | Icons |
+<div align="center">
+
+| Layer | Technology |
+|-------|-----------|
+| **Frontend** | React 18, TypeScript 5.5 |
+| **Build Tool** | Vite 5.4 |
+| **Styling** | Tailwind CSS 3.4 |
+| **Backend** | Supabase (PostgreSQL + REST API) |
+| **State** | Zustand 5 |
+| **Charts** | Recharts 3.8 |
+| **Icons** | Lucide React |
+
+</div>
 
 ---
 
 ## Getting Started
 
 ### Prerequisites
-- Node.js 18+ installed
-- A Supabase project (free tier works)
 
-### Installation
+- **Node.js** 18+ (recommended: 20 LTS)
+- **npm** or **yarn**
+- A **Supabase** account (free tier works)
+
+### 1. Clone the Repository
 
 ```bash
-# Clone the repository
 git clone https://github.com/MrPathak1/School-Management-System.git
-
-# Navigate to project directory
 cd School-Management-System
-
-# Install dependencies
-npm install
-
-# Set up environment variables
-# Create a .env file in the root directory
 ```
 
-### Environment Variables
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Configure Environment
 
 Create a `.env` file in the project root:
 
 ```env
-VITE_SUPABASE_URL=your_supabase_url
-VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+VITE_SUPABASE_URL=https://your-project.supabase.co
+VITE_SUPABASE_ANON_KEY=your-anon-key-here
 ```
 
-### Database Setup
+### 4. Set Up Database
 
-Run the SQL migration files in your Supabase SQL Editor in order:
+1. Go to your [Supabase Dashboard](https://supabase.com/dashboard)
+2. Open the **SQL Editor**
+3. Run each migration file in order from `supabase/migrations/`:
 
-1. `supabase/migrations/001_initial_schema.sql` - Creates all tables
-2. `supabase/migrations/002_seed_data_part1.sql` - Seed users and classes
-3. `supabase/migrations/003_seed_data_part2.sql` - Seed students and teachers
-4. `supabase/migrations/004_seed_attendance.sql` - Seed attendance data
-5. `supabase/migrations/005_seed_grades.sql` - Seed grades data
-6. `supabase/migrations/006_seed_final.sql` - Seed remaining data
-7. `supabase/migrations/007_disable_rls_for_demo.sql` - Disable RLS for demo
-8. Remaining migration files for additional features
+```
+001_initial_schema.sql        → Creates all tables
+002_seed_data_part1.sql       → Seeds users and classes
+003_seed_data_part2.sql       → Seeds students and teachers
+004_seed_attendance.sql       → Seeds attendance data
+005_seed_grades.sql           → Seeds grades data
+006_seed_final.sql            → Seeds remaining data
+007_disable_rls_for_demo.sql  → Disables RLS for demo
+008-014                       → Additional feature tables
+```
 
-### Development Server
+### 5. Start Development Server
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173) in your browser.
+Open **http://localhost:5173** in your browser.
 
-### Production Build
+### 6. Production Build
 
 ```bash
 npm run build
@@ -134,86 +185,143 @@ npm run preview
 
 ## Demo Accounts
 
-| Role | Email | Password |
-|------|-------|----------|
-| Admin | admin@school.edu | any |
-| Teacher | teacher1@school.edu | any |
-| Student | student1@school.edu | any |
-| Parent | robert.t@email.com | any |
+Use these credentials to log in (no password required for demo):
+
+| Role | Email | Quick Access |
+|------|-------|-------------|
+| **Admin** | `admin@school.edu` | Full system access |
+| **Teacher** | `teacher1@school.edu` | Class management |
+| **Student** | `student1@school.edu` | Student portal |
+| **Parent** | `robert.t@email.com` | Parent portal |
 
 ---
 
 ## Project Structure
 
 ```
-src/
-├── components/          # Reusable UI components
-│   ├── ui/              # Base UI components (Card, Modal, Table)
-│   ├── AdminFeeManager.tsx
-│   ├── AdmitCardGenerator.tsx
-│   ├── AIAssistant.tsx
-│   ├── AnalyticsDashboard.tsx
-│   ├── BusTracking.tsx
-│   ├── CampusGallery.tsx
-│   ├── DocumentManager.tsx
-│   ├── EventCalendar.tsx
-│   ├── ExamScheduleManager.tsx
-│   ├── HealthRecords.tsx
-│   ├── IdentityCardGenerator.tsx
-│   ├── Layout.tsx
-│   ├── LibraryPanel.tsx
-│   ├── MessagingPanel.tsx
-│   ├── PaymentModal.tsx
-│   ├── ScheduleManager.tsx
-│   ├── StudyMaterials.tsx
-│   ├── StudentExamPanel.tsx
-│   ├── TeacherExamPanel.tsx
-│   └── ...Card views
-├── contexts/
-│   └── AppContext.tsx   # Global state & auth
-├── hooks/
-│   ├── usePermissions.ts
-│   └── useToast.tsx
-├── lib/
-│   └── supabase.ts      # Supabase client & types
-├── pages/
-│   ├── AdminDashboard.tsx
-│   ├── LandingPage.tsx
-│   ├── ParentDashboard.tsx
-│   ├── SignupPage.tsx
-│   ├── StudentDashboard.tsx
-│   └── TeacherDashboard.tsx
-├── App.tsx
-├── main.tsx
-└── index.css
+School-Management-System/
+├── public/                          # Static assets
+│   └── school_campus.png
+├── src/
+│   ├── components/                  # Feature components
+│   │   ├── ui/                      # Base UI (Card, Modal, Table)
+│   │   ├── AdminFeeManager.tsx      # Fee management
+│   │   ├── AdmitCardGenerator.tsx   # Admit card designs
+│   │   ├── AIAssistant.tsx          # AI chatbot
+│   │   ├── AnalyticsDashboard.tsx   # Charts & stats
+│   │   ├── BusTracking.tsx          # Bus route management
+│   │   ├── CampusGallery.tsx        # Photo gallery
+│   │   ├── DocumentManager.tsx      # Document uploads
+│   │   ├── EventCalendar.tsx        # Event management
+│   │   ├── ExamScheduleManager.tsx  # Exam timetables
+│   │   ├── HealthRecords.tsx        # Health tracking
+│   │   ├── IdentityCardGenerator.tsx# ID card designs
+│   │   ├── Layout.tsx               # App layout & nav
+│   │   ├── LibraryPanel.tsx         # Library management
+│   │   ├── MessagingPanel.tsx       # Messaging system
+│   │   ├── PaymentModal.tsx         # Payment recording
+│   │   ├── ScheduleManager.tsx      # Timetable management
+│   │   ├── StudentExamPanel.tsx     # Student exam taking
+│   │   ├── StudyMaterials.tsx       # Study material uploads
+│   │   ├── TeacherExamPanel.tsx     # Exam creation
+│   │   └── *IdentityCardView.tsx    # Card display views
+│   ├── contexts/
+│   │   └── AppContext.tsx           # Global state & auth
+│   ├── hooks/
+│   │   ├── usePermissions.ts        # Role-based access
+│   │   └── useToast.tsx             # Toast notifications
+│   ├── lib/
+│   │   └── supabase.ts              # Supabase client & types
+│   ├── pages/
+│   │   ├── AdminDashboard.tsx       # Admin portal
+│   │   ├── LandingPage.tsx          # Public landing page
+│   │   ├── ParentDashboard.tsx      # Parent portal
+│   │   ├── SignupPage.tsx           # Teacher registration
+│   │   ├── StudentDashboard.tsx     # Student portal
+│   │   └── TeacherDashboard.tsx     # Teacher portal
+│   ├── App.tsx                      # Root component
+│   ├── main.tsx                     # Entry point
+│   └── index.css                    # Global styles
+├── supabase/
+│   └── migrations/                  # Database migrations (14 files)
+├── .env.example                     # Environment template
+├── .gitignore
+├── index.html
+├── package.json
+├── tailwind.config.js
+├── tsconfig.json
+└── vite.config.ts
 ```
 
 ---
 
-## Bug Fixes
+## Key Improvements
 
-This project has undergone a thorough audit with **19+ bugs fixed**, including:
+### Bugs Fixed (19+)
 
-- ScheduleManager edit/delete buttons targeting wrong time slots
-- AnalyticsDashboard stale state causing stats to always show zero
-- PaymentModal payAmount not syncing when props change
-- StudentExamPanel timer memory leak on component unmount
-- Error messages showing success icons instead of error icons
-- LibraryPanel null dereference on book return
-- MessagingPanel unread count not working for parent/admin modes
-- HealthRecords allowing student write access
-- DocumentManager ignoring studentId prop
-- Grade input hardcoded cap of 100 instead of using exam max marks
-- AdminFeeManager using wrong fee structure fallback
-- BusTracking missing error handling on Supabase operations
-- Division by zero in grade percentage calculation
+| Severity | Issue | Fix |
+|----------|-------|-----|
+| **Critical** | ScheduleManager edit/delete buttons targeted wrong time slots | Iterate days (1-5) instead of periods |
+| **Critical** | AnalyticsDashboard stale state — stats always showed zero | Use local variables instead of stale state |
+| **Critical** | PaymentModal payAmount not syncing on re-render | Added useEffect to sync with props |
+| **Critical** | StudentExamPanel timer memory leak on unmount | Store timer in useRef + cleanup on unmount |
+| **High** | Error messages showed success (checkmark) icon | Replaced with AlertCircle icon |
+| **High** | AdminFeeManager used wrong fee structure fallback | Match class_id properly, block zero-fee |
+| **High** | AdminDashboard pending fees used hardcoded fake values | Calculate from actual payment data |
+| **High** | TeacherDashboard grades not filtered by class | Added student_id filter to query |
+| **High** | Grade input hardcoded cap at 100 | Use exam's max_marks as cap |
+| **High** | HealthRecords allowed student write access | Restricted to admin/teacher only |
+| **High** | DocumentManager ignored studentId prop | Added student_id filter to query |
+| **Medium** | MessagingPanel unread count broken for parents | Fixed for all modes (teacher/parent/admin) |
+| **Medium** | LibraryPanel null dereference on book return | Added null check on borrow.book |
+| **Medium** | LibraryPanel race condition on availability | Use Math.max(0, available - 1) |
+| **Medium** | BusTracking no error handling | Added error checks on all operations |
+| **Medium** | Division by zero in grade calculation | Added max_marks > 0 guard |
+| **Low** | LibraryPanel edit button used "+" icon | Changed to Edit icon |
+| **Low** | LandingPage wrong email address | Updated to correct email |
+| **Low** | ParentDashboard unused variable | Removed dead code |
+
+### Features Removed (Inappropriate)
+
+- **Fake payment card UI** — Removed pre-filled Stripe test card and fake processing
+- **Student/parent self-registration** — Now admin-only creates accounts
+
+---
+
+## Available Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server |
+| `npm run build` | Production build |
+| `npm run preview` | Preview production build |
+| `npm run lint` | Run ESLint |
+| `npm run typecheck` | Run TypeScript type checking |
+
+---
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. **Fork** the repository
+2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
+3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
+4. **Push** to the branch (`git push origin feature/amazing-feature`)
+5. **Open** a Pull Request
 
 ---
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
 
 ---
 
-Built with care for **Mr Pathak School**
+<div align="center">
+
+**Built with care for Mr Pathak School**
+
+[![GitHub](https://img.shields.io/badge/GitHub-MrPathak1-181717?style=flat&logo=github)](https://github.com/MrPathak1)
+
+</div>
